@@ -16,7 +16,7 @@ const ProjectCard = ({projectInfo}) => {
         setIsChecked(prev=>!prev)
       
         if(isChecked){
-            axios.delete(`http://165.22.210.84/node/v1/project/deleteProject`,
+            axios.delete(`http://165.22.210.84/node/v1/api/project/deleteProject`,
             {
             headers: {
                 'Authorization' : `Bearer ${localStorage.getItem('token')}`
@@ -31,7 +31,7 @@ const ProjectCard = ({projectInfo}) => {
 
         }
         else{
-            axios.delete(`http://165.22.210.84/node/v1/project/deleteProject`, {
+            axios.delete(`http://165.22.210.84/node/v1/api/project/deleteProject`, {
             headers: {
                 'Authorization' : `Bearer ${localStorage.getItem('token')}`
             },

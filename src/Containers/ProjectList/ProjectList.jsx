@@ -8,7 +8,7 @@ const ProjectList = () => {
   const [allProjects, setAllProjects] = useState([]);
 
   useEffect(()=> {
-    axios.get('http://165.22.210.84/node/v1/project/getAllProject', {
+    axios.get('http://165.22.210.84/node/v1/api/project/getAllProject', {
       headers: {
         'apptoken': 'eyJhbGciOiJIUzM4NCJ9.eyJJc3N1ZXIiOiJQU1NTIiwiQXBwbGljYXRpb24iOiJJUEwtTUFSS0VULVBMQUNFIiwiaWF0IjoxNjQ4NTU2MzY0fQ.sglGgNFW6XwLJ71Bz8MpDcxgX62p2eYjGJ_0vonaoQK06_SDWy92fsonk5tG2XAz',
         'Content-Type': 'application/json'

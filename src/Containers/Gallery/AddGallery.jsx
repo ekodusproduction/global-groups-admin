@@ -21,7 +21,7 @@ const AddGallery = () => {
     const [project,setProject]= useState({})
 
     useEffect(()=> {
-      axios.get('http://165.22.210.84/node/v1/project/getAllProjectDropDownList')
+      axios.get('http://165.22.210.84/node/v1/api/project/getAllProjectDropDownList')
       .then(function (response) {
         setAllProjects(response?.data?.data?.result);
         
@@ -59,7 +59,7 @@ const AddGallery = () => {
    
      console.log("updatedData", updatedData)
       console.log(project)
-      axios.post(`http://165.22.210.84/node/v1/gallery/uploadGallery`, {
+      axios.post(`http://165.22.210.84/node/v1/api/gallery/uploadGallery`, {
       ...updatedData
     },
     {

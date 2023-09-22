@@ -15,7 +15,7 @@ const upcoming = "upcomping";
 const completed = "completed";
 const defaultV = "default";
   useEffect(() => {
-    axios.get(`http://165.22.210.84/node/v1/project/projectCount/${ongoing}`)
+    axios.get(`http://165.22.210.84/node/v1/api/project/projectCount/${ongoing}`)
       .then(response => {
        console.log(response?.data?.data?.result)
      setOngoingCount(response?.data?.data?.result?.count)
@@ -25,7 +25,7 @@ const defaultV = "default";
       });
   }, []);
   useEffect(() => {
-    axios.get(`http://165.22.210.84/node/v1/project/projectCount/${upcoming}`)
+    axios.get(`http://165.22.210.84/node/v1/api/project/projectCount/${upcoming}`)
       .then(response => {
        console.log(response?.data?.data?.result)
      setUpComingCount(response?.data?.data?.result?.count)
@@ -35,7 +35,7 @@ const defaultV = "default";
       });
   }, []);
   useEffect(() => {
-    axios.get(`http://165.22.210.84/node/v1/project/projectCount/${completed}`)
+    axios.get(`http://165.22.210.84/node/v1/api/project/projectCount/${completed}`)
       .then(response => {
        console.log(response?.data?.data?.result)
      setCompltedCount(response?.data?.data?.result?.count)
@@ -45,7 +45,7 @@ const defaultV = "default";
       });
   }, []);
   useEffect(() => {
-    axios.get(`http://165.22.210.84/node/v1/project/projectCount/${defaultV}`)
+    axios.get(`http://165.22.210.84/node/v1/api/project/projectCount/${defaultV}`)
       .then(response => {
        console.log(response?.data?.data?.result)
      settotatProjectCount(response?.data?.data?.result?.count)
@@ -57,7 +57,7 @@ const defaultV = "default";
 
 
   useEffect(() => {
-    axios.get(`http://165.22.210.84/node/v1/contact/getEnquiryCount`)
+    axios.get(`http://165.22.210.84/node/v1/api/contact/getEnquiryCount`)
       .then(response => {
        console.log(response?.data?.data?.result)
        setEnquiryCount(response?.data?.data?.result?.count)
@@ -68,7 +68,7 @@ const defaultV = "default";
   }, []);
 
   useEffect(() => {
-    axios.get(`http://165.22.210.84/node/v1/registration/getOutReachCount`)
+    axios.get(`http://165.22.210.84/node/v1/api/registration/getOutReachCount`)
       .then(response => {
        console.log(response?.data?.data?.result)
        setOutReachCount(response?.data?.data?.result?.count)

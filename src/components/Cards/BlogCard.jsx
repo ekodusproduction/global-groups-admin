@@ -16,7 +16,7 @@ const BlogCard = ({blogDetails}) => {
         setIsChecked(prev=>!prev)
       
         if(isChecked){
-            axios.delete(`http://165.22.210.84/node/v1/blog/deleteBlogPost`,
+            axios.delete(`http://165.22.210.84/node/v1/api/blog/deleteBlogPost`,
             {
             headers: {
                 'Authorization' : `Bearer ${localStorage.getItem('token')}`
@@ -31,7 +31,7 @@ const BlogCard = ({blogDetails}) => {
 
         }
         else{
-            axios.delete(`http://165.22.210.84/node/v1/blog/deleteBlogPost`, {
+            axios.delete(`http://165.22.210.84/node/v1/api/blog/deleteBlogPost`, {
             headers: {
                 'Authorization' : `Bearer ${localStorage.getItem('token')}`
             },

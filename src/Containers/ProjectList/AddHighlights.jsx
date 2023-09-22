@@ -15,7 +15,7 @@ const AddHighlights = () => {
   const [project, setProject] = useState({});
   useEffect(() => {
     axios
-      .get("http://165.22.210.84/node/v1/project/getAllProjectDropDownList")
+      .get("http://165.22.210.84/node/v1/api/project/getAllProjectDropDownList")
       .then(function (response) {
         setAllProjects(response?.data?.data?.result);
       })
@@ -46,7 +46,7 @@ const AddHighlights = () => {
       } else {
        
         axios
-          .post(`http://165.22.210.84/node/v1//project/addhighlights`, {
+          .post(`http://165.22.210.84/node/v1/api//project/addhighlights`, {
             highlights: rows,
             projectId: project?.projectId,
           }, {

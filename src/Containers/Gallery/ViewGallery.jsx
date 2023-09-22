@@ -19,7 +19,7 @@ const ViewGallery = () => {
     const [getResponse, setGetResponse] = useState([])
 
     useEffect(()=> {
-      axios.get('http://165.22.210.84/node/v1/project/getAllProjectDropDownList')
+      axios.get('http://165.22.210.84/node/v1/api/project/getAllProjectDropDownList')
         .then(function (response) {
           console.log("response", response?.data?.data?.result)
           setAllProjects(response.data.data?.result);
@@ -48,7 +48,7 @@ const ViewGallery = () => {
       //  const  headers = {
       //     'Authorization' : `Bearer ${localStorage.getItem('token')}`
       // }
-      //   axios.delete(`http://165.22.210.84/node/v1/gallery/deleteGalleryItem/${deletedItem[0].id}`, {
+      //   axios.delete(`http://165.22.210.84/node/v1/api/gallery/deleteGalleryItem/${deletedItem[0].id}`, {
       //    headers
             
            
@@ -103,7 +103,7 @@ const ViewGallery = () => {
      
         console.log(deletedItem[0].id)
 
-        axios.delete(`http://165.22.210.84/node/v1/gallery/deleteGalleryItem/${deletedItem[0].id}`, {
+        axios.delete(`http://165.22.210.84/node/v1/api/gallery/deleteGalleryItem/${deletedItem[0].id}`, {
             headers: {
                 'Authorization' : `Bearer ${localStorage.getItem('token')}`
             },
@@ -121,7 +121,7 @@ const ViewGallery = () => {
 
       const fetchGalleryImageHandler = () => {
         setFiles([])
-        axios.get(`http://165.22.210.84/node/v1/gallery/getGalleryList/${project?.projectId}`)
+        axios.get(`http://165.22.210.84/node/v1/api/gallery/getGalleryList/${project?.projectId}`)
         .then(function (response) {
         console.log("response", response)
         if(response?.data?.data.result.length > 0){

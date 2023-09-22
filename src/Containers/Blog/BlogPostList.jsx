@@ -65,7 +65,7 @@ navigate('/layout/blog', {state:{blogId: row?.id}})
 
       const handleDeleteBlogPost = () => {
         console.log("clickeddddddddd")
-        axios.delete(`http://165.22.210.84/node/v1/blog/deleteBlogPost/${deleteId}`, {
+        axios.delete(`http://165.22.210.84/node/v1/api/blog/deleteBlogPost/${deleteId}`, {
     })
     .then(function (response) {
         console.log("response", response)
@@ -96,7 +96,7 @@ navigate('/layout/blog', {state:{blogId: row?.id}})
 
 
 const fetchBlogList = ()=>{
-  axios.get('http://165.22.210.84/node/v1/blog/getAdminBlogPostList', {
+  axios.get('http://165.22.210.84/node/v1/api/blog/getAdminBlogPostList', {
   })
   .then(function (response) {
       console.log("response", response)
