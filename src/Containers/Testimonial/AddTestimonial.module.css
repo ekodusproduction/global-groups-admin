@@ -1,0 +1,27 @@
+.addtestimonial_container{
+    background-color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.addtestimonial_form_section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+.addtestimonial_project_q{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.addtestimonial_project_select{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.addtestimonial_project_select select{
+    width: 300px;
+    height: 35px;
+    border-color: #bbbbbb;
+}

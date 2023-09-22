@@ -1,0 +1,17 @@
+/* Container for centering */
+.dashboard_center_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    margin: 2rem 0; /* Add vertical margin */
+ 
+}
+
+/* Your existing styles for the dashboard_summary */
+.dashboard_summary {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the container */
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 100%;
+}

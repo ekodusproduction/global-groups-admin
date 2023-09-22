@@ -1,0 +1,52 @@
+.card{
+    background-color: white;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 0 0 3px 2px #dadada;
+    border-radius: 10px;
+    padding-block: 1rem;
+
+}
+.project_card_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 14px;
+    color: #646464;
+}
+.project_card_header img{
+    width: 50px;
+}
+.project_card_body{
+    padding-inline: 14px;
+    color: #646464;
+}
+.project_card_body p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card_dots{
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.card_source{
+    position: relative;
+}
+.card_source_link{
+    position: absolute;
+    width: max-content;
+    right: 40%;
+   
+    background-color: white;
+    padding: 10px 1rem;
+    box-shadow: 0 0 3px 2px #d8d8d8;
+   
+
+}
+.card_source_link a{
+    text-decoration: none;
+    font-size: 13px;
+    padding-right: 1rem;
+}

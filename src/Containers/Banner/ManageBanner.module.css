@@ -1,0 +1,28 @@
+.manageBanner_cards{
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+.manageBanner_card{
+    width: 30%;
+    box-shadow: 0 0 3px 2px #afafaf;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-block: 1rem;
+}
+.manageBanner_card_img{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    
+}
+.manageBanner_card_body{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.manageBanner_container h2{
+    margin-block: 1rem;
+}

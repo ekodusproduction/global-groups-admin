@@ -1,0 +1,14 @@
+.projectList_container{
+    margin-block: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 964px;
+    margin-inline: auto;
+}
+@media screen and (max-width:1300px){
+    .projectList_container{
+        width: 632px;
+    }
+  
+}

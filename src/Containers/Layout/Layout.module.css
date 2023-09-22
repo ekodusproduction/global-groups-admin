@@ -1,0 +1,9 @@
+.supercontainer{
+    display: flex;
+}
+
+.container{
+    margin: 1rem;
+    width: 100%;
+  
+}

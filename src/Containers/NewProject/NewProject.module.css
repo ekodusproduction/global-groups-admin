@@ -1,0 +1,60 @@
+.newProject{
+    margin-block: 2rem;
+    background-color: white;
+    padding:2rem;
+    border-radius: 10px;
+}
+.newproject_header{
+    margin-bottom: 1rem;
+}
+#project_image_preview img{
+    width: 50vw;
+}
+#project_title{
+    display: flex;
+    flex-direction: column;
+}
+#project_image_preview{
+    border: 1px solid #a3a3a3;
+    width:fit-content;
+    min-width: 500px;
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.newproject_body form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.newproject_body form select{
+    height: 45px;
+    border-color: rgb(192, 192, 192);
+}
+.project_form_div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#project_start_date input{
+    width: 32vw;
+    height: 50px;
+    padding-left: 1rem;
+
+}
+#project_first_sale input{
+    width: 32vw;
+    height: 50px;
+    padding-left: 1rem;
+}
+
+.project_row{
+    display: flex;
+    gap: 2rem;
+}
+.project_row input{
+    width: 30vw;
+    /* height: 30px; */
+    padding-left: 1rem;
+}

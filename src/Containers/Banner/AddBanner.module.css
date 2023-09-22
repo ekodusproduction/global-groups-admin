@@ -1,0 +1,26 @@
+.addbanner_container{
+
+    background-color: white;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.addbanner_heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.addbanner_subhead{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.addbanner_subhead input , .addbanner_mainhead input{
+    height: 35px;
+    padding-left: 10px;
+}
+.addbanner_mainhead{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
