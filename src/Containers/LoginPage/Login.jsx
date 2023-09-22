@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleSubmit = () => {
   
-    fetch('http://127.0.0.1:3000/v1/api/admin/login', {
+    fetch('http://165.22.210.84/node/v1/admin/login', {
       method: 'POST',
       body: JSON.stringify({
         emailId: email,

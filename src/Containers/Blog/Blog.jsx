@@ -62,7 +62,7 @@ const [formData, setFormData] = useState({
       formData['description'] = JSON.stringify(formData?.description.trim())
       console.log("Data", formData)
       let data = {...formData, postId: state?.blogId}
-      axios.post("http://127.0.0.1:3000/v1/api//blog/updateBlogPost", {...data}, {
+      axios.post("http://165.22.210.84/node/v1//blog/updateBlogPost", {...data}, {
         headers: {
           'Content-type': 'multipart/form-data',
           'Authorization' : `Bearer ${localStorage.getItem('token')}`
@@ -93,7 +93,7 @@ const [formData, setFormData] = useState({
     }
   formData['description'] = formData?.description.replace(/\/+$/, '')
     console.log("Data", formData)
-    axios.post("http://127.0.0.1:3000/v1/api/blog/addBlogPost", {...formData}, {
+    axios.post("http://165.22.210.84/node/v1/blog/addBlogPost", {...formData}, {
         headers: {
           'Content-type': 'multipart/form-data',
           'Authorization' : `Bearer ${localStorage.getItem('token')}`
@@ -136,7 +136,7 @@ const [formData, setFormData] = useState({
 
   useEffect(()=>{
     if (state !== null && state?.blogId) {
-      axios.get(`http://127.0.0.1:3000/v1/api/blog/getBlogPostById/${state?.blogId}`,{
+      axios.get(`http://165.22.210.84/node/v1/blog/getBlogPostById/${state?.blogId}`,{
    } )
       .then(function (response) {
        console.log("response", response?.data?.data?.result[0])

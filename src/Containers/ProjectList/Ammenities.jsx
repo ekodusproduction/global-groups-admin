@@ -11,7 +11,7 @@ const Ammenities = () => {
     const [selected, setSelected] = useState([]);
     
     useEffect(()=> {
-      axios.get('http://127.0.0.1:3000/v1/api/project/getAllProjectDropDownList')
+      axios.get('http://165.22.210.84/node/v1/project/getAllProjectDropDownList')
       .then(function (response) {
         setAllProjects(response?.data?.data?.result);
       })
@@ -21,7 +21,7 @@ const Ammenities = () => {
     },[])
 
     useEffect(()=> {
-      axios.get('http://127.0.0.1:3000/v1/api/amenity/getallamenity')
+      axios.get('http://165.22.210.84/node/v1/amenity/getallamenity')
       .then(function (response) {
         console.log("response", response)
         setAmenities(response?.data?.data?.result);
@@ -56,7 +56,7 @@ const Ammenities = () => {
           projectId: project?.projectId
         }
         console.log("data", data)
-        axios.post(`http://127.0.0.1:3000/v1/api/amenity/addAminity`, {
+        axios.post(`http://165.22.210.84/node/v1/amenity/addAminity`, {
          ...data
         },
       
@@ -128,7 +128,7 @@ const Ammenities = () => {
     setProject(dropDownItem)
     console.log("Thar", dropDownItem?.projectId)
   
-    axios.get(`http://127.0.0.1:3000/v1/api/amenity/getProjectAmenities/${dropDownItem?.projectId}`
+    axios.get(`http://165.22.210.84/node/v1/amenity/getProjectAmenities/${dropDownItem?.projectId}`
 
   )
   .then(function (response) {

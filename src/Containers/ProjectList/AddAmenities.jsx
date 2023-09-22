@@ -39,7 +39,7 @@ const AddAmenities = () => {
  const projectFormSubmitHandler = () => {
 
     console.log("FormData", formData)
-    axios.post(`http://127.0.0.1:3000/v1/api/amenity/createAminity`, {
+    axios.post(`http://165.22.210.84/node/v1/amenity/createAminity`, {
       ...formData
     },
     {

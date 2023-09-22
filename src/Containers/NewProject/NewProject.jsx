@@ -37,7 +37,7 @@ const NewProject = () => {
 
   useEffect(() => {
     if (state !== null && state?.project_id) {
-        axios.get(`http://127.0.0.1:3000/v1/api/project/getProjectBasicById/${state?.project_id}`,{
+        axios.get(`http://165.22.210.84/node/v1/project/getProjectBasicById/${state?.project_id}`,{
      } )
         .then(function (response) {
          console.log("response", response?.data?.data?.result[0])
@@ -165,7 +165,7 @@ const NewProject = () => {
    
     if(state==null){
     
-    axios.post('http://127.0.0.1:3000/v1/api/project/addProject', {
+    axios.post('http://165.22.210.84/node/v1/project/addProject', {
       ...formData,
       
     },
@@ -210,7 +210,7 @@ const NewProject = () => {
     console.log("FormData", formData)
     // setFormData({...formData, project_id: state?.project_id})
     const data = {...formData, project_id: state?.project_id}
-    axios.put(`http://127.0.0.1:3000/v1/api/project/updateProject`, {
+    axios.put(`http://165.22.210.84/node/v1/project/updateProject`, {
       ...data
     },
     {

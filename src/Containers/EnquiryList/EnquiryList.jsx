@@ -42,7 +42,7 @@ const EnquiryList = () => {
     ];
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:3000/v1/api/registration/getEnquiryList')
+        axios.get('http://165.22.210.84/node/v1/registration/getEnquiryList')
           .then(response => {
            console.log(response?.data?.data?.result)
            setEnquiryData(response?.data?.data?.result)

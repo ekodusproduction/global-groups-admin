@@ -51,7 +51,7 @@ navigate('/layout/addtestimonial',{state:{row: row}})
   }, []);
 
 const fetchTestimonialList = ()=>{
-  axios.get('http://127.0.0.1:3000/v1/api/testimony/getTestimonyList')
+  axios.get('http://165.22.210.84/node/v1/testimony/getTestimonyList')
   .then(response => {
    console.log(response?.data?.data?.result)
    setTestimony(response?.data?.data?.result)
@@ -73,7 +73,7 @@ const fetchTestimonialList = ()=>{
       const handleDelete = () => {
         console.log("delteId", deleteId)
        
-        axios.delete(`http://127.0.0.1:3000/v1/api/testimony/deleteTestimony/${deleteId}`, {
+        axios.delete(`http://165.22.210.84/node/v1/testimony/deleteTestimony/${deleteId}`, {
     })
     .then(function (response) {
         console.log("response", response)
